@@ -1,0 +1,52 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body{
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .wrapper{
+    background-color: #333333;
+    color:#FFF;
+    margin:150px auto 0px auto; 
+    position: relative;
+    max-width: 660px;
+    padding:100px 10px 30px 10px;
+  }
+  .buttons{
+    max-width: 660px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .wrapper h1{
+    font-size:1.5em;
+    font-weight: bold;
+  }
+  .wrapper .resim{
+    position: absolute;
+    top:-80px;
+    transform:translateX(-50%);
+    left:50%;
+    
+  }
+  .wrapper .resim img{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border:5px solid #FFF;
+  }
+  .footer-logo { 
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  @media (max-width:767.98px){
+    .wrapper{
+        max-width: 90%;
+    }
+    .buttons{
+        max-width: 90%;
+    }
+  }
