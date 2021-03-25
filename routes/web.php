@@ -17,7 +17,7 @@ use App\Http\Controllers\LinkController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('site.pages.home');
 });
 
 Route::get('/dashboard', [LinkController::class, 'index'])->middleware(['auth'])->name('dashboard');
